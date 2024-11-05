@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h1>I'm Chamara Priyalal</h1>
+    <p>Web & Software Developer</p>
+  </div>
+
+  <nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I hold a diploma in Information and Communication Technology (ICT), which has given me a solid foundation in various technical skills. Through this experience, I developed a strong interest in both web and software development. I’m passionate about creating effective, user-friendly solutions and continuously learning new technologies to improve my craft. Whether working on front-end designs or complex backend systems, I aim to deliver high-quality, impactful projects that meet the needs of clients and users alike</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Age Calculator</h3>
+      <p>
+        This is a simple Age Calculator application created using HTML, CSS, and JavaScript. The application allows users to enter their birth date and calculates their age in years, months, and days. The user interface is clean and responsive, making it easy to use on both desktop and mobile devices.</p>
+      <a href="https://chamara202.github.io/Age-Calculator/" target="_blank" class="project-link">
+        <i class="fas fa-external-link-alt"></i> View Project
+      </a>
+    </div>
+    <div class="project-card">
+        <h3>Lanka Delights</h3>
+        <p>
+            A simple, elegant website created using HTML and CSS, showcasing the beauty and diversity of Sri Lankan cuisine.</p>
+        <a href="https://chamara202.github.io/Lankan-Delights/" target="_blank" class="project-link">
+          <i class="fas fa-external-link-alt"></i> View Project
+        </a>
+      </div>
+      <div class="project-card">
+        <h3>Random Chat</h3>
+        <p>
+            I am excited to share that I have developed a new application using HTML, CSS, and JavaScript. This unique application allows users to enter their name and instantly receive a description of what kind of person they are. It's a fun and engaging way to explore different personas!</p>
+        <a href="https://chamara202.github.io/.Random-Chat/" target="_blank" class="project-link">
+          <i class="fas fa-external-link-alt"></i> View Project
+        </a>
+      </div>
+
+      <div class="project-card">
+        <h3>Garment Factory</h3>
+        <p>
+            This is a responsive, user-friendly website created to showcase garment products. The site is designed with clean and modern aesthetics, making it suitable for clothing brands or e-commerce platforms.
+        </p>
+        <a href="https://chamara202.github.io/Test-Garment/" target="_blank" class="project-link">
+          <i class="fas fa-external-link-alt"></i> View Project
+        </a>
+      </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <h3>HTML</h3>
+        <div class="skill-bar">
+          <div class="skill-level" data-skill="98"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <h3>CSS</h3>
+        <div class="skill-bar">
+          <div class="skill-level" data-skill="90"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <h3>JavaScript</h3>
+        <div class="skill-bar">
+          <div class="skill-level" data-skill="75"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <h3>PHP</h3>
+        <div class="skill-bar">
+          <div class="skill-level" data-skill="85"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <h3>Vb.Net</h3>
+        <div class="skill-bar">
+          <div class="skill-level" data-skill="70"></div>
+        </div> </div>
+        <div class="skill-item">
+            <h3>MySQL</h3>
+            <div class="skill-bar">
+              <div class="skill-level" data-skill="85"></div>
+            </div> </div>
+            <div class="skill-item">
+                <h3>Java</h3>
+                <div class="skill-bar">
+                  <div class="skill-level" data-skill="50"></div>
+                </div> </div>
+  </section>
+   
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Email: chamara@gmail.com</p>
+    
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/94760822431?text=Hello%20Chamara!%20I'm%20interested%20in%20your%20services." target="_blank" class="whatsapp-btn">
+      <i class="fab fa-whatsapp"></i> Message me on WhatsApp
+    </a>
+  
+    <!-- Contact Form -->
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+  
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+
+
+  
+  <script src="script.js"></script> <!-- This should be last -->
+</body>
+</html>

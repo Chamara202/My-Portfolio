@@ -1,0 +1,340 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+ #projects a{
+    text-decoration: none;
+    color: white;
+    padding-top: 25px;
+  }
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1f1f1f;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    color: #00ADB5;
+    margin-bottom: 0.5rem;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #1a1a1a;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+  }
+  
+  .navbar a {
+    color: #00ADB5;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #00ADB5;
+   transform: matrix(2);
+  }
+  
+  /* Sections */
+  .section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    color: #00ADB5;
+    padding: 10px;
+  }
+
+  .project-card h3{
+    padding: 20px;
+}
+  
+  .project-card {
+    background-color: #1f1f1f;
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(174, 171, 171, 0.5);
+  }
+
+  /* Project Link Styling */
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 1rem;
+    color: #00ADB5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .project-link i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .project-link:hover {
+    color: #ffffff;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .skill-item {
+    text-align: center;
+  }
+  
+  .skill-item h3 {
+    font-size: 1.2rem;
+    color: #00ADB5;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill-bar {
+    position: relative;
+    background-color: #333;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .skill-level {
+    height: 100%;
+    width: 0;
+    background-color: #00ADB5;
+    border-radius: 4px;
+    transition: width 1s ease;
+  }
+
+  
+.section {
+    padding: 40px;
+    text-align: center;
+    background: #121212;
+    color: #f5f5f5;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* WhatsApp Button Styling */
+  .whatsapp-btn {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .whatsapp-btn:hover {
+    background-color: #128c7e;
+  }
+  
+  .whatsapp-btn i {
+    margin-right: 8px;
+  }
+  
+  /* Contact Form Styling */
+  form#contact-form {
+    max-width: 500px;
+    margin: 20px auto;
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  form#contact-form label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #ddd;
+    font-weight: bold;
+  }
+  
+  form#contact-form input, form#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    background: #2e2e2e;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+  }
+  
+  form#contact-form input:focus, form#contact-form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  form#contact-form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #4CAF50;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+  }
+  
+  form#contact-form button:hover {
+    background: #45A049;
+  }
+
+  /* Tablet View */
+@media (max-width: 1024px) {
+    .header h1 {
+      font-size: 2rem;
+    }
+  
+    .header p {
+      font-size: 1rem;
+    }
+    .navbar {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        background-color: #1a1a1a;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+    .navbar a {
+      margin: 0 0.5rem;
+    }
+  
+    .section {
+      padding: 3rem 1rem;
+    }
+  
+    .project-card {
+      padding: 1.5rem;
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+    /* Header adjustments */
+    .header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .header p {
+      font-size: 0.9rem;
+    }
+  
+    /* Navbar adjustments */
+
+  
+    /* Section adjustments */
+    .section {
+      padding: 2rem 1rem;
+    }
+  
+    .section h2 {
+      font-size: 1.5rem;
+     
+    }
+  
+    /* Project card adjustments */
+    .project-card {
+      padding: 1rem;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+    }
+
+    .project-card h3{
+        padding: 20px;
+    }
+  
+    /* Project link icon */
+    .project-link i {
+      font-size: 1rem;
+    }
+  
+    .project-link {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Small Mobile View */
+  @media (max-width: 480px) {
+    .header h1 {
+      font-size: 1.6rem;
+    }
+  
+    .header p {
+      font-size: 0.8rem;
+    }
+  
+    .section h2 {
+      font-size: 1.3rem;
+    }
+  
+    /* Reduce padding and margin for small screens */
+    .section {
+      padding: 1.5rem 0.5rem;
+    }
+  
+    .project-card {
+      padding: 0.8rem;
+    }
+  
+    .project-link {
+      font-size: 0.8rem;
+    }
+  }
+
+  /* skills */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 10px;
+  }
